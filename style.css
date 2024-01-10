@@ -1,0 +1,113 @@
+.attribution { font-size: 11px; text-align: center; color: whitesmoke}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* GOOGLE FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ----------- COLORS -------------- */
+  --FONT-ADVICE-COLOR: hsl(193, 38%, 86%);
+  --MAIN-TITLE-COLOR: hsl(150, 100%, 66%);
+
+  --BG-COLOR: hsl(218, 23%, 16%);
+  --BG-ADVICE-COLOR: hsl(217, 19%, 24%);
+  --GRAYISH-BLUE: hsl(217, 19%, 38%);
+
+  /* -------------- FONT -------------- */
+  --FONT-FAMILY: 'Manrope', sans-serif;
+  --FONT-SIZE: 1.75rem;
+}
+
+body {
+  font: var(--FONT-SIZE) var(--FONT-FAMILY);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--BG-COLOR);
+}
+
+
+.main-container {
+  background-color: var(--BG-ADVICE-COLOR);
+  color: var(--FONT-ADVICE-COLOR);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.3);
+}
+
+.main-container div {
+  margin: 2rem 0;
+}
+
+.advice-number-div {
+  color: var(--MAIN-TITLE-COLOR);
+  font-weight: 600;
+  letter-spacing: .5rem;
+  font-size: .8rem;
+  text-transform: uppercase;
+}
+
+.advice-div {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.divider {
+  width: 100%;
+}
+
+.request-button-div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3.8rem;
+}
+
+.request-button {
+  background-color: var(--MAIN-TITLE-COLOR);
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  transition: box-shadow .3s;
+  cursor: pointer;
+}
+
+/* ---------- HOVER STYLES -------------- */
+.request-button:hover {
+  box-shadow: 0 0 20px var(--MAIN-TITLE-COLOR);
+}
+
+/* ---------- ACTIVE STYLES ------------ */
+.request-button:active {
+  box-shadow: 0 0 5px var(--MAIN-TITLE-COLOR);
+}
+
+/* ---------- MEDIA QUERIES ------------ */
+/* MOBILE SITE */
+@media (max-width: 700px) {
+  body {
+    min-height: 0;
+  }
+
+  .main-container {
+    margin: 8rem 2rem 3rem 2rem;
+  }
+}

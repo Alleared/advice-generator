@@ -1,0 +1,1 @@
+Frontend Mentor JavaScrip Junior Challenge, this is my first API challenge.
